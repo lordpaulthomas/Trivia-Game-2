@@ -24,7 +24,7 @@ const questions = [
       question: "Who was Ginny Weasley's first boyfriend?",
       answers: ["Dean Thomas", "Harry Potter","Michael Corner", "Draco Malfoy"],
       correctAnswer: 'Michael Corner',
-      image: "<img src='https://media.giphy.com/media/eWM99f3s7Odd6/giphy.gif>"
+      image: "<img src='https://media.giphy.com/media/rXLbSn2WvHmq4/giphy.gif'>"
   },
   {
       question: "What profession are Hermoine Granger's Muggle parents?",
@@ -116,7 +116,7 @@ var game = {
     $('#subwrapper').html("<h2>OUT OF TIME!</h3>");
     $('#subwrapper').html("<h3>The Correct Answer Was: " + questions[game.currentQuestion].correctAnswer+"</h3")
     if(game.currentQuestion==questions.length-1){
-      setTimeout(game.results,3*1000)
+      setTimeout(game.results,4*1000)
     } else {
     setTimeout(game.nextQuestion,3*1000)
     }
