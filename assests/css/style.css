@@ -1,6 +1,6 @@
 *{
   font-family: 'Crimson Text', serif;
-  font-size: 25px;
+  font-size: 20px;
 
 
 }
@@ -11,20 +11,25 @@ body{
 }
 
 #wrapper {
-  margin-top: 10vh;
   width: 60vw;
   height: 80vh;
   float: center;
-  background-color: brown;
+  background: url(../images/1-basic.png);
   color: bisque;
   text-align: center;
 
-
-  
+span{
+  font-size: 25px;
+}
 
 }
 #subwrapper{
+  background-color: brown;
   color: bisque;
   float: center;
+  padding: 8px;
 }
-
+button{
+  padding: 10px;
+  margin: 4px;
+}

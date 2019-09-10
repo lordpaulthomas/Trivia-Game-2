@@ -13,13 +13,11 @@ const questions = [
       question: "Who becomes the Minister for Magic When Cornelius Fudge resigns?",
       answers: ["Rufus Scrimgeour","Professor Umbridge","Professor Snape","Mr Crouch"],
       correctAnswer: "Rufus Scrimgeour",
-      image: "<img src='https://media.giphy.com/media/720g7C1jz13wI/source.gif'>"
   },
   {
       question: "How many brothers and sisters does Ron have?",
       answers: ["2", "6", "5", "8" ],
       correctAnswer: '6',
-      image: "href=https://media.giphy.com/media/720g7C1jz13wI/source.gif"
   },
   {
       question: "Who was Ginny Weasley's first boyfriend?",
@@ -28,80 +26,55 @@ const questions = [
   },
   {
       question: "What profession are Hermoine Granger's Muggle parents?",
-      answers: {
-          a: 'Chefs',
-          b: 'Dentists',
-          c: 'Opticians',
-          d: 'Artists'
-      },
-      correctAnswer: 'b'
+      answers: ['Chefs', 'Dentists', 'Opticians', 'Artists'],
+      correctAnswer: 'Dentists'
   },
   {
       question: "What was Fred and George's joke shop's name?",
-      answers: {
-          a: "Wizard's Tricks",
-          b: "Weasley's Wizarding Gadets",
-          c: "Weasley's Wizard Wheezes",
-          d: 'Cloaks and Jokes'
-      },
-      correctAnswer: 'c'
+      answers: ["Wizard's Tricks", "Weasley's Wizarding Gadets", "Weasley's Wizard Wheezes", 'Cloaks and Jokes'],
+      correctAnswer: "Weasley's Wizard Wheezes"
   },
   {
       question: "What is the position that Harry Potter played on the Quidditch team?",
-      answers: {
-          a: 'Beater',
-          b: 'Keeper',
-          c: 'Chaser',
-          d: 'Seeker'
-      },
-      correctAnswer: 'd'
+      answers: ['Beater', 'Keeper', 'Chaser', 'Seeker'],
+      correctAnswer: 'Seeker'
   },
   {
       question: "What is Hermione Granger's Patronus?",
-      answers: {
-          a: 'otter',
-          b: 'horse',
-          c: 'fox',
-          d: 'rabbit'
-      },
-      correctAnswer: 'a'
+      answers: ['otter', 'horse', 'fox','rabbit'],
+      correctAnswer: 'otter'
   },
   {
       question: "What color are Dobby the House Elf's eyes?",
-      answers: {
-          a: 'Brown',
-          b: 'Green',
-          c: 'Blue',
-          d: 'Black'
-      },
-      correctAnswer: 'b'
+      answers: ['Brown', 'Green', 'Blue', 'Black'],
+      correctAnswer: 'Green'
   },
   {
       question: "What spell does Gilderoy Lockhart accidentally cast on himself in Harry Potter and the Chamber of Secrets?",
-      answers: {
-          a: 'Sectumsempra',
-          b: 'Imperio',
-          c: 'Expelliarmus',
-          d: 'Obliviate'
-      },
-      correctAnswer: 'd'
+      answers: ['Sectumsempra', 'Imperio','Expelliarmus', 'Obliviate'],
+      correctAnswer: 'Obliviate'
   },
   {
       question: "What does Vernon Dursley's company sell?",
-      answers: {
-          a: 'Drills',
-          b: 'Cars',
-          c: 'Software',
-          d: 'Furniture'
-      },
-      correctAnswer: 'a'
+      answers: ['Drills', 'Cars', 'Software', 'Furniture'],
+      correctAnswer: 'Drills'
   }
 
 ]
 $(document).on('click','#reset', function (){
   game.reset();
 })
-
+var audioElement = document.createElement("audio");
+// attach to mp3 file
+audioElement.setAttribute("src", "./assests/images/harry-potter-dubstep-remix.mp3");
+// play audio button 
+$(".theme-button").on("click", function () {
+    audioElement.play();
+});
+// pause audio button
+$(".pause-button").on("click", function () {
+    audioElement.pause();
+});
 var game = {
   questions: questions,
   currentQuestion:0,
@@ -119,7 +92,7 @@ var game = {
   },
   loadQuestion: function(){
     timer = setInterval(game.countdown, 1000)  
-    $('#subwrapper').html("<h2>Time Remaining <span id='counter'>30</span> Seconds</h2>")
+    $('#subwrapper').html("<h2>Time Remaining <span id='counter' class='sec'>30</span> Seconds</h2>")
     $('#subwrapper').append('<h2>' + questions[game.currentQuestion].question + '</h2>')
     for(let i = 0; i < questions[game.currentQuestion].answers.length;i++){
       $('#subwrapper').append('<button class="answer-button" id="button-'+i+'"data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>');
