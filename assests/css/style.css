@@ -1,3 +1,30 @@
-.test{
-  background-color: blue;
+*{
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+
+
 }
+
+body{
+  background: url(../images/hp.jpg); 
+  background-size: cover; 
+}
+
+#wrapper {
+  margin-top: 10vh;
+  width: 60vw;
+  height: 80vh;
+  float: center;
+  background-color: brown;
+  color: bisque;
+  text-align: center;
+
+
+  
+
+}
+#subwrapper{
+  color: bisque;
+  float: center;
+}
+
