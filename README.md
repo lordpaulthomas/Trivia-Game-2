@@ -16,3 +16,5 @@ This _Harry Potter_ themed trivia game consist of 10 questions aimed to test you
 Technology Used
 --------
 This one page application was made using `HTML`, `CSS`, and `Javascript`.  `JQuery` was used for dynamic creation of elements and Bootstrap was used for creating layout.  
+
+![database](/assests/images/screen.png)
