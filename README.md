@@ -15,6 +15,23 @@ This _Harry Potter_ themed trivia game consist of 10 questions aimed to test you
 
 Technology Used
 --------
-This one page application was made using `HTML`, `CSS`, and `Javascript`.  `JQuery` was used for dynamic creation of elements and Bootstrap was used for creating layout.  
+This one page application was made using **JQuery**, **JavaScript**, **Bootsrap**, **CSS** and **HTML**.
+
+Installation:
+------
+Clone repository to desired folder
+
+```git clone https://github.com/lordpaulthomas/Trivia-Game-2.git```
+
+Navigate in cloned folder
+
+```cd Trivia-Game-2/```
+
+Open in your code editor (ex. Visual Studio Code)
+
+```code .```
+
+Right-Click on ~index.html~ 
+Select ~Open in Default Browser~
 
 ![database](/assests/images/screen.png)
