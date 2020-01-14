@@ -1,4 +1,4 @@
-**Harry Potter Trivia Game**
+# Harry Potter Trivia Game
 -------------------
 
 Licensing Information: READ LICENSE
