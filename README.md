@@ -31,7 +31,7 @@ Open in your code editor (ex. Visual Studio Code)
 
 ```code .```
 
-Right-Click on #index.html# 
-Select #Open in Default Browser#
+Right-Click on `index.html` 
+Select `Open in Default Browser`
 
 ![database](/assests/images/screen.png)
