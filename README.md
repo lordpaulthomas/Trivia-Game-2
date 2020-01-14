@@ -5,7 +5,7 @@
 ---
 ##### Project source can be downloaded from https://github.com/lordpaulthomas/Trivia-Game-2
 ----
-##### Author
+Author
 ------
 # Paul Thomas
 
