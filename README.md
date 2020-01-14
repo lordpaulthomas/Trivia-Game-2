@@ -1,13 +1,13 @@
 # Harry Potter Trivia Game
 -------------------
 
-Licensing Information: READ LICENSE
+##### Licensing Information: READ LICENSE
 ---
-Project source can be downloaded from https://github.com/lordpaulthomas/Trivia-Game-2
+##### Project source can be downloaded from https://github.com/lordpaulthomas/Trivia-Game-2
 ----
-Author
+##### Author
 ------
-Paul Thomas
+# Paul Thomas
 
 Description of Game
 ---------------
